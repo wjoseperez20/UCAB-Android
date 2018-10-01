@@ -1,7 +1,7 @@
 package com.example.hellotoast;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void init(){
+    private void init() {
         setContentView(R.layout.activity_main);
 
         this.bCount = findViewById(R.id.bCount);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         this.tShowCount = findViewById(R.id.tshowCount);
     }
 
-    private void setListeners(){
+    private void setListeners() {
         this.bCount.setOnClickListener(onCount);
         this.bToast.setOnClickListener(onToast);
     }
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener onToast = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast toast = Toast.makeText(getApplicationContext(), logica.doAlert(),Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(getApplicationContext(), logica.doAlert(), Toast.LENGTH_LONG);
             toast.show();
         }
     };

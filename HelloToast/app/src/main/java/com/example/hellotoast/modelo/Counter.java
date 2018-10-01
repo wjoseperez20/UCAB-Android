@@ -9,7 +9,7 @@ public class Counter {
         return this._count;
     }
 
-    public void setCount(int value){
+    public void setCount(int value) {
         this._count = value;
     }
 
@@ -17,15 +17,15 @@ public class Counter {
         return this._mensaje;
     }
 
-    public void setMensaje(String value){
+    public void setMensaje(String value) {
         this._mensaje = value;
     }
 
-    public Counter(String mensaje){
+    public Counter(String mensaje) {
         this._mensaje = mensaje;
     }
 
-    public void doCount(){
+    public void doCount() {
         this._count++;
     }
 }

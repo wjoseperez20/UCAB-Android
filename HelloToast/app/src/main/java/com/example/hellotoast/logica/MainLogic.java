@@ -6,17 +6,17 @@ public class MainLogic {
 
     private Counter counter;
 
-    public MainLogic(String mensaje){
+    public MainLogic(String mensaje) {
         this.counter = new Counter(mensaje);
     }
 
-    public String doCount(){
+    public String doCount() {
         this.counter.doCount();
 
-        return  String.valueOf(this.counter.getCount());
+        return String.valueOf(this.counter.getCount());
     }
 
-    public String doAlert(){
+    public String doAlert() {
 
         return this.counter.getMensaje();
     }
