@@ -1,10 +1,9 @@
-package com.example.myfirstapp;
+package com.example.twoActivities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -21,18 +20,18 @@ public class SecondActivity extends AppCompatActivity {
         this.LoadInformation();
     }
 
-    private void Init(){
+    private void Init() {
         this.textMessage = findViewById(R.id.text_message);
         this.textBack = findViewById(R.id.text_back);
     }
 
-    private void LoadInformation(){
+    private void LoadInformation() {
         this.textMessage.setText(getIntent().getStringExtra("message"));
     }
 
     public void launchBack(View view) {
         Intent intent = new Intent(this, Main.class);
-        intent.putExtra("reply",this.textBack.getText().toString());
+        intent.putExtra("reply", this.textBack.getText().toString());
         this.textBack.setText(null);
         startActivity(intent);
     }
